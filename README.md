@@ -1,3 +1,27 @@
+# 安裝 go
+```
+安裝 go     (1.7以上) https://golang.org/dl/
+     $ wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
+     $ sudo tar -xvf go1.7.linux-amd64.tar.gz
+     $ sudo mv go /usr/local
+     $ vi ~/.profile
+          export GOPATH=$HOME/yenkuanlee
+          export PATH=$PATH:/usr/local/go/bin
+          export PATH=$PATH:$GOPATH/bin
+     $ source ~/.profile
+```
+# usage
+```
+$ mkdir -p /tmp/src/github.com/ipfs/go-ipfs
+$ cd /tmp
+$ git clone https://github.com/yenkuanlee/go-ipfs-with-domain-name
+$ mv go-ipfs-with-domain-name/* /tmp/src/github.com/ipfs/go-ipfs
+$ cd /tmp/src
+$ git clone https://github.com/yenkuanlee/gx
+$ cd /tmp/src/github.com/ipfs/go-ipfs
+$ make install
+```
+
 # go-ipfs
 
 ![banner](https://ipfs.io/ipfs/QmVk7srrwahXLNmcDYvyUEJptyoxpndnRa57YJ11L4jV26/ipfs.go.png)
