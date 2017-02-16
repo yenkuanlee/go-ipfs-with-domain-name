@@ -4,6 +4,8 @@
      $ wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
      $ sudo tar -xvf go1.7.linux-amd64.tar.gz
      $ sudo mv go /usr/local
+     $ export PATH=$PATH:/usr/local/go/bin
+     $ export PATH=$PATH:$GOPATH/bin
 ```
 # usage
 ```
@@ -16,6 +18,13 @@ $ git clone https://github.com/yenkuanlee/gx
 $ cd /tmp/src/github.com/ipfs/go-ipfs
 $ export GOPATH=/tmp
 $ make install
+
+$ mkdir -p /opt/iservstor/data
+$ mkdir /opt/iservstor/conf
+$ echo 'DOMAIN_NAME = test' > /opt/iservstor/conf/iservstor.conf
+
+$ ipfs init
+
 ```
 
 # go-ipfs
