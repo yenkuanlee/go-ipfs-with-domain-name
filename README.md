@@ -4,11 +4,6 @@
      $ wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
      $ sudo tar -xvf go1.7.linux-amd64.tar.gz
      $ sudo mv go /usr/local
-     $ vi ~/.profile
-          export GOPATH=$HOME/yenkuanlee
-          export PATH=$PATH:/usr/local/go/bin
-          export PATH=$PATH:$GOPATH/bin
-     $ source ~/.profile
 ```
 # usage
 ```
@@ -19,6 +14,7 @@ $ mv go-ipfs-with-domain-name/* /tmp/src/github.com/ipfs/go-ipfs
 $ cd /tmp/src
 $ git clone https://github.com/yenkuanlee/gx
 $ cd /tmp/src/github.com/ipfs/go-ipfs
+$ export GOPATH=/tmp
 $ make install
 ```
 
